@@ -3,7 +3,7 @@ pipeline{
  stages{
    stage('gitclone'){
     steps{
-      git 'https://github.com/shazforiot/nodeapp_test.git'
+      git 'https://github.com/bhavanaadmin/lost.git'
     }
    }
    stage('Build'){
