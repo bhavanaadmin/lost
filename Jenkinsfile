@@ -13,7 +13,7 @@ pipeline{
    }
    stage('push'){
     steps{
-     sh 'docker push gcr.io/gj-playground/app:pink .'
+     sh 'docker push gcr.io/gj-playground/app:pink'
     }
    }
  }
