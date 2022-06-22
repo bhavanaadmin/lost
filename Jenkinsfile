@@ -13,6 +13,8 @@ pipeline{
    }
    stage('push'){
     steps{
+     sh 'gcloud auth activate-service-account sample@gj-playground.iam.gserviceaccount.com --key-file=json.txt'
+     sh 'gcloud auth configure-docker'
      sh 'docker push gcr.io/gj-playground/app:pink'
     }
    }
